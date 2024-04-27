@@ -1,0 +1,51 @@
+.bg{
+  height: 90vh;
+  width: 90%;
+  box-sizing: border-box;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: auto;
+}
+.bg::-webkit-scrollbar {
+  display: none;
+}
+.bg-img{
+  position: relative;
+  background-size: cover;
+}
+.rounded-circle{
+  border-radius: 100%;
+  z-index: 8;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  overflow: hidden;
+  left: 100px;
+  top: 100px;
+  width: 110px;
+}
+.btn5 {
+  padding: 0;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  border-width: 3px;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.btn5 img {
+  width: 100%;
+  /* чтобы изображение занимало всю доступную ширину */
+  height: auto;
+  /* сохраняем пропорции */
+}
+
+.btn5:hover {
+  animation: pulse 1s infinite alternate;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
